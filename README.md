@@ -5,11 +5,9 @@ rounded corners for your wayland compositor.
 ## table of contents
 
 - [install](#install)
-  - [go](#go)
   - [nix flake](#nix-flake)
 - [usage](#usage)
-- [configuration](#configuration)
-- [nixos module](#nixos-module)
+- [home-manager module](#home-manager-module)
 - [dev](#dev)
 - [license](#license)
 
