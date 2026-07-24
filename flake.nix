@@ -58,7 +58,7 @@
               description = "The corny package to use.";
             };
             radius = lib.mkOption {
-              type = lib.types.nullOr lib.types.unsignedInt;
+              type = lib.types.nullOr lib.types.int;
               description = "Corner radius.";
             };
           };
