@@ -64,11 +64,7 @@
           };
 
           config = lib.mkIf cfg.enable {
-            xdg.configFile."tangle/config.yaml".text = lib.generators.toYAML { } {
-              actions = cfg.actions;
-            };
-
-            systemd.user.services.tangle = {
+            systemd.user.services.corny = {
               Unit = {
                 Description = "corny daemon (user service)";
                 After = [ "graphical-session.target" ];
