@@ -20,7 +20,7 @@ rounded corners for your wayland compositor.
 add to your `flake.nix` inputs:
 
 ```nix
-tangle = {
+corny = {
   url = "github:yaaaarn/corny";
   inputs.nixpkgs.follows = "nixpkgs";
 };
