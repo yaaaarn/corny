@@ -34,19 +34,18 @@ bool on_draw (Gtk.Widget widget, Cairo.Context cr) {
 }
 
 const OptionEntry[] options = {
-    { "radius", 'r', 0, OptionArg.INT, ref corner_radius, "Corner radius in pixels", "RADIUS" },
+    { "radius", 'r', 0, OptionArg.INT, ref corner_radius, "corner radius in pixels", "RADIUS" },
     { null }
 };
 
 int main (string[] args) {
-    // Parse command line arguments using GLib.OptionContext
     try {
-        var opt_context = new OptionContext ("- Rounded Screen Corners");
+        var opt_context = new OptionContext ("- rounded screen corners");
         opt_context.set_help_enabled (true);
         opt_context.add_main_entries (options, null);
         opt_context.parse (ref args);
     } catch (OptionError e) {
-        stderr.printf ("Error parsing arguments: %s\n", e.message);
+        stderr.printf ("error parsing arguments: %s\n", e.message);
         return 1;
     }
 
