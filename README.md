@@ -1,3 +1,6 @@
+> [!WARNING]
+> moved to https://codeberg.org/y3/corny
+
 # 🌽 corny
 
 rounded corners for your wayland compositor.
